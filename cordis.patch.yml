@@ -1,0 +1,6 @@
+bundle:
+  - base:
+version: 0.1.0
+insert:
+  - id: dsh-link
+    name: dsh-link-plugin
