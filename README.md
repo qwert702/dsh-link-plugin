@@ -9,7 +9,7 @@
 在你的 dsh profile 中安装:
 
 ```bash
-dsh plugin --profile web add "github:deepseek-ai/dsh-link-plugin#main"
+dsh plugin --profile web add "github:qwert702/dsh-link-plugin#main"
 ```
 
 ## 配置
