@@ -4,8 +4,17 @@
   "description": "dsh 社区远程连接插件:把本机 dsh harness 连接到 dsh 社区网站,支持浏览器远程安装插件、读取商店注册表。",
   "main": "./lib/index.js",
   "dsh": {
+    "runtime": "host",
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
     }
   },
   "scripts": {
@@ -14,7 +23,6 @@
   "keywords": ["dsh", "plugin", "remote", "link", "cordis"],
   "license": "MIT",
   "dependencies": {
-    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6",
     "@deepseek-ai/schemastery": "^3.18.1",
     "ws": "^8.18.0"
   },
